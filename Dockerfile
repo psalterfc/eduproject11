@@ -6,5 +6,5 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13
 RUN cd /tmp &&  tar xvfz apache-tomcat-10.1.13.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-10.1.13/* /usr/local/tomcat/
 ADD **/*.war /usr/local/tomcat/webapps
-EXPOSE 8080
+EXPOSE 8081
 CMD /usr/local/tomcat/bin/catalina.sh run
