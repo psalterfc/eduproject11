@@ -5,7 +5,7 @@
           community.docker.docker_image:
               build:
                   path: "/home/ubuntu/Desktop"
-              name: docker.io/psalterfc/abctechnologies
+              name: docker.io/psalterfc/edproject1
               #tag: test
               push: true
               source: build
@@ -15,7 +15,7 @@
         - name: start a container
           community.docker.docker_container:
              name: abc-application
-             image: psalterfc/abctechnologies
+             image: psalterfc/eduproject1
              state: started
              ports:
                  - 1234:8080
