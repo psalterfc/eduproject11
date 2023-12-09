@@ -5,7 +5,7 @@
           community.docker.docker_image:
               build:
                   path: "/home/ubuntu/Desktop"
-              name: docker.io/psalterfc/edproject1
+              name: docker.io/psalterfc/eduproject1
               #tag: test
               push: true
               source: build
